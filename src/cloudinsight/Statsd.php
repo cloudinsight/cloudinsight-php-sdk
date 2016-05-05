@@ -124,7 +124,6 @@ class Statsd
     {
         $data = '';
         foreach ($buffer as $element) {
-            var_dump(self::ENCODING);
             $encode_elelment = iconv(mb_detect_encoding($element, mb_detect_order(), true), self::ENCODING, $element);
             $data .= "$encode_elelment\n";
         }
