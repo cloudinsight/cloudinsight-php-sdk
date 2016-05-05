@@ -1,0 +1,29 @@
+{
+    "name": "cloudinsight/cloudinsight-sdk",
+    "type": "library",
+    "description": "Cloud Insight SDK. (http://www.oneapm.com/ci/feature.html)",
+    "homepage": "http://www.oneapm.com/ci/feature.html",
+    "authors": [
+        {
+            "name": "YingRui Lu",
+            "email": "luyingrui@oneapm.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "require-dev": {
+        "phpdocumentor/phpdocumentor": "*",
+        "phpunit/phpunit": "4.7.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "CloudInsight\\": "src/cloudinsight/"
+        }
+    },
+    "config" : {
+      "disable-tls" : true,
+      "secure-http" : false
+    },
+    "license": "MIT"
+}
