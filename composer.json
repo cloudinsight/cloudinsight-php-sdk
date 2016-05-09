@@ -22,9 +22,5 @@
             "CloudInsight\\": "src/cloudinsight/"
         }
     },
-    "config" : {
-      "disable-tls" : true,
-      "secure-http" : false
-    },
     "license": "MIT"
 }
