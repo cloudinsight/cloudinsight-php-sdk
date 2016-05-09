@@ -1,5 +1,7 @@
 # Cloud Insight PHP SDK
 
+[![Build Status](https://api.travis-ci.org/cloudinsight/cloudinsight-php-sdk.svg?branch=master)](http://travis-ci.org/cloudinsight/cloudinsight-php-sdk)
+
 ## Installation
 To install this package you will need:
 
