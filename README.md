@@ -1,7 +1,7 @@
 # Cloud Insight PHP SDK
 
 [![Build Status](https://api.travis-ci.org/cloudinsight/cloudinsight-php-sdk.svg?branch=master)](http://travis-ci.org/cloudinsight/cloudinsight-php-sdk)
-
+[![Development Version](https://poser.pugx.org/cloudinsight/cloudinsight-sdk/v/stable.svg)](https://packagist.org/packages/cloudinsight/cloudinsight-sdk)
 ## Installation
 To install this package you will need:
 
@@ -29,13 +29,13 @@ Make sure your app `require 'vendor/autoload.php'`
 
   $statsd = new Statsd;
 
-  #Increment a counter.
+  //Increment a counter.
   $statsd->increment('page.views');
   
-  #Record a gauge 100 of replies
+  //Record a gauge 100 of replies
   $statsd->gauge('blogs.replies', 100);
 
-  #Record a gauge 50% of the time.
+  //Record a gauge 50% of the time.
   $statsd.gauge('users.online', 100, ['users.cloudinsight'], 0.5);
 ```
 
