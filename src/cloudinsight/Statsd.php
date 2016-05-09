@@ -17,9 +17,9 @@ class Statsd
         $this->host            = $host;
         $this->port            = $port;
         $this->buffer          = array();
-        $this->max_buffer_size = is_null($option['max_buffer_size']) ? 50 : $option['max_buffer_size'];
-        $this->constant_tags   = is_null($option['constant_tags']) ? array() : $option['constant_tags'];
-        $this->use_ms          = is_null($option['use_ms']) ? false : $option['use_ms'];
+        $this->max_buffer_size = isset($option['max_buffer_size']) ? $option['max_buffer_size'] : 50;
+        $this->constant_tags   = isset($option['constant_tags']) ? $option['constant_tags'] : array();
+        $this->use_ms          = isset($option['use_ms']) ? $option['use_ms'] : false;
         register_shutdown_function(array(&$this, 'onExit'));
     }
 
@@ -60,7 +60,7 @@ class Statsd
             return;
         }
         $data = $this->convert($metric, $mtype, $value, $tags, $sample_rate);
-        if (!is_null($data)) {
+        if (isset($data)) {
             $this->storeToBuffer($data);
         }
     }
