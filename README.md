@@ -20,9 +20,9 @@ Or you can run the `composer require` command from your terminal.
 
     $ composer require cloudinsight/cloudinsight-sdk
 
-Make sure your app `require 'vendor/autoload.php'`
-
 ## Quick Start Guide
+
+Make sure your app `require 'vendor/autoload.php'`
 
 ```php
   use CloudInsight\Statsd;
@@ -36,7 +36,7 @@ Make sure your app `require 'vendor/autoload.php'`
   $statsd->gauge('blogs.replies', 100);
 
   //Record a gauge 50% of the time.
-  $statsd.gauge('users.online', 100, ['users.cloudinsight'], 0.5);
+  $statsd->gauge('users.online', 100, ['users.cloudinsight'], 0.5);
 ```
 
 document see: [http://docs-ci.oneapm.com/api/php.html](http://docs-ci.oneapm.com/api)
