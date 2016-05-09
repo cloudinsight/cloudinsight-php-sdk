@@ -8,9 +8,4 @@ php:
 
 sudo: false
 
-branches:
-  only:
-    - master
-
-script:
-  - vendor/bin/phpunit
+script: phpunit
