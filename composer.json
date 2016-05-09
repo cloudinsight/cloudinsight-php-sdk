@@ -14,8 +14,7 @@
     },
     "require-dev": {
         "phpdocumentor/phpdocumentor": "*",
-        "phpunit/phpunit": "4.7.*",
-        "cloudinsight/cloudinsight-sdk": "~0.0.1"
+        "phpunit/phpunit": "4.7.*"
     },
     "autoload": {
         "psr-4": {
